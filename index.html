@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico?" type="image/x-icon">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <button id="viewHighscoresBtn">View Highscores</button> <!-- view highscores -->
+        <p style="display: none">Time: <span id="timerTag">9999</span></p> <!-- timer -->
+    </header>
+
+    <main> <!-- container holding questions -->
+        
+        <h1 id="title">Coding Quiz Challenge</h1> <!-- header for questions in quiz as well -->
+        <p id="instructions">Answer the following code-related questions within the time limit. Incorrect answers will penalize your score time by ten seconds!</p>
+        <button id="startBtn">Start Quiz</button> <!-- starts quiz -->
+        <ul>
+            <!-- dynamically fill this with list items containing answers -->
+        </ul>
+        <div id="submit-highscore-div"> <!-- end screen to submit info -->
+            <h1>All Done!</h1> <!-- Confirm end of quiz -->
+            <p>Your final score is <span id="scoreSpan">999</span>.</p> <!-- display final score -->
+            <div id="highscore-input-div"> <!-- forum to enter name to submit score -->
+                <p>Enter Name:</p>
+                <input type="text" id="fname" name="fname" value="">
+                <button id="submitHighscoreBtn">Submit</button>
+            </div>
+        </div>
+        <div id="display-highscore-div"> <!-- holds the highscores -->
+            <h1>Highscores</h1>
+            <ol>
+                <!-- Dynamic <li> tags go here -->
+            </ol>
+            <button id="goBackBtn">Go Back</button> <!-- Button to return to main pre-quiz view -->
+            <button id="clearHighscoreBtn">Clear Highscores</button> <!-- Resets local memory -->
+        </div>
+    </main>
+    <footer>
+        <p>Created by Brandon Norsworthy</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
